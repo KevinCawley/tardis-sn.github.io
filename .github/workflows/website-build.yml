@@ -15,31 +15,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        submodules: true #Fetch Hugo themes (true OR recursive)
-        fetch-depth: 0 #Fetch all history for .GitInfo and .Lastmod
-      
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
-
-    - name: Build
-      run: hugo --minify --gc
-
-<<<<<<< HEAD
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/checkout@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
-=======
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
->>>>>>> 0410853e6a8a5f2e69a936c00c3d3dfb061ea20b
+          submodules: true #Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 #Fetch all history for .GitInfo and .Lastmod
+        
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        run: hugo --minify --gc
+
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./public
+            publish_branch: gh-pages
+
