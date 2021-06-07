@@ -1,10 +1,10 @@
 title: TARDIS
-baseURL: https://kevincawley.github.io/tardis-sn.github.io/
+baseURL: https://tardis-sn.github.io/preview/ # Remove "preview/" when ready to publish publicly
 params:
   base_font: nunito-sans
   palette: blue
   header:
-    logo_img: images/tardis_banner.jpg #Increase the size of this/find better so it's legible, or remove the bottom text!
+    logo_img: images/tardis_banner.jpg # TODO: Increase the size of this/find better so it's legible, or remove the bottom text!
     logo_img_alt: Logo
     has_nav: true
     nav_links:
@@ -49,19 +49,19 @@ params:
         title: Community
         nav_links:
           - label: Twitter
-            url: 'https://twitter.com/'
+            url: "https://twitter.com/"
             style: link
             has_icon: true
             icon: twitter
             icon_position: left
           - label: LinkedIn
-            url: 'https://www.linkedin.com/'
+            url: "https://www.linkedin.com/"
             style: link
             has_icon: true
             icon: linkedin
             icon_position: left
           - label: GitHub
-            url: 'https://github.com/'
+            url: "https://github.com/"
             style: link
             has_icon: true
             icon: github
