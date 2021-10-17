@@ -1640,3 +1640,9 @@ body.has-theme-bar #page {
   max-height: 60px;
   overflow: hidden;
   word-wrap: break-all; }
+
+.anchor-offset h4:target::before {
+  content: "";
+  height: 81px;
+  margin: -81px 0px 0px;
+  display: block; }
