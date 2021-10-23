@@ -1621,7 +1621,7 @@ body.has-theme-bar #page {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  margin-bottom: 20px; }
+  margin-bottom: 5px; }
 
 .picture-grid .individual-container .info-container .person-name {
   text-align: center;
@@ -1641,7 +1641,15 @@ body.has-theme-bar #page {
   overflow: hidden;
   word-wrap: break-all; }
 
-.anchor-offset h4:target::before {
+.picture-grid .individual-container .info-container .role-box a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none; }
+
+.picture-grid .individual-container .info-container .role-box a:hover {
+  color: blue; }
+
+.anchor-offset:target::before {
   content: "";
   height: 81px;
   margin: -81px 0px 0px;
